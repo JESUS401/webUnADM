@@ -1,0 +1,271 @@
+
+/* Selector de todos los elementos*/
+*{
+    box-sizing: border-box;
+}
+
+
+/*Cambio en etiqueta html y body reseteamos a cero */ 
+    html, body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+
+/*Con este selector modifico todas las etiquetas que empiezan con COL */ 
+     /*Se le pone float left para que cada producto esté pegado */ 
+     [class *="col-"]{
+        float: left;
+        padding: 10px;
+        width: 100%;
+    }
+
+/*Cambio en diseño de logo*/ 
+    .logo{
+        position: center;
+        border-radius:100px;
+        width: 100px;
+        height: 100px;
+        border-color: aquamarine;
+        border-width: 50px;
+
+    }
+
+/*Cambio en color de los enlaces */ 
+
+    a{
+        color: grey;
+    }
+/*Cambio en color al pasar mouse */ 
+    a:hover{
+        color: #545EE3;
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+    .fila::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /*Cambio en color al pasar mouse */ 
+    /*Como son 12 columnas el total de productos se divide 100/12*/ 
+    /*Es necesario ponerlo como porcentaje para que sea responsivo, en caso que se asigne manualmente un valor no se ajustaría a pantalla*/ 
+
+
+    @media only screen and (min-width: 768px) {
+        #menu ul {
+            margin-left: 20px;
+            text-align: left;
+        }
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        /* Para móviles */
+        .col-xs-1 {width: 8.33%;}
+        .col-xs-2 {width: 16.66%;}
+        .col-xs-3 {width: 25%;}
+        .col-xs-4 {width: 33.33%;}
+        .col-xs-5 {width: 41.66%;}
+        .col-xs-6 {width: 50%;}
+        .col-xs-7 {width: 58.33%;}
+        .col-xs-8 {width: 66.66%;}
+        .col-xs-9 {width: 75%;}
+        .col-xs-10 {width: 83.33%;}
+        .col-xs-11 {width: 91.66%;}
+        .col-xs-12 {width: 100%;}
+    }
+    
+    @media only screen and (min-width: 600px) {
+        /* Para tablets */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+    }
+    
+    @media only screen and (min-width: 768px) {
+        /* Para escritorio */
+        .col-m-1 {width: 8.33%;}
+        .col-m-2 {width: 16.66%;}
+        .col-m-3 {width: 25%;}
+        .col-m-4 {width: 33.33%;}
+        .col-m-5 {width: 41.66%;}
+        .col-m-6 {width: 50%;}
+        .col-m-7 {width: 58.33%;}
+        .col-m-8 {width: 66.66%;}
+        .col-m-9 {width: 75%;}
+        .col-m-10 {width: 83.33%;}
+        .col-m-11 {width: 91.66%;}
+        .col-m-12 {width: 100%;}
+    }
+    
+    @media only screen and (min-width: 992px) {
+         /* Para escritorio con monitor */
+        .col-l-1 {width: 8.33%;}
+        .col-l-2 {width: 16.66%;}
+        .col-l-3 {width: 25%;}
+        .col-l-4 {width: 33.33%;}
+        .col-l-5 {width: 41.66%;}
+        .col-l-6 {width: 50%;}
+        .col-l-7 {width: 58.33%;}
+        .col-l-8 {width: 66.66%;}
+        .col-l-9 {width: 75%;}
+        .col-l-10 {width: 83.33%;}
+        .col-l-11 {width: 91.66%;}
+        .col-l-12 {width: 100%;}
+    }
+    
+    @media only screen and (min-width: 1200px) {
+         /* Para escritorio con monitores mas grandes */
+        .col-xl-1 {width: 8.33%;}
+        .col-xl-2 {width: 16.66%;}
+        .col-xl-3 {width: 25%;}
+        .col-xl-4 {width: 33.33%;}
+        .col-xl-5 {width: 41.66%;}
+        .col-xl-6 {width: 50%;}
+        .col-xl-7 {width: 58.33%;}
+        .col-xl-8 {width: 66.66%;}
+        .col-xl-9 {width: 75%;}
+        .col-xl-10 {width: 83.33%;}
+        .col-xl-11 {width: 91.66%;}
+        .col-xl-12 {width: 100%;}
+    }
+    
+    .menu{
+        list-style-type: none;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+        text-align: center;
+       /* text-color:blue;*/
+    }
+
+
+
+
+
+   
+    .productos98{
+        margin-left: 25px;
+        margin-right: 30px;
+        text-align: center;
+        display:block;
+        padding: 0px;
+        margin-bottom: 7px;
+    }
+
+    .tituloproductos{
+        color:grey;
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+
+    .row952{
+        position:relative;
+        margin-left: 40px ;
+        line-height: 22px;
+        
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+     
+
+    /*modificador Boton comprar*/
+    .ComprarBoton {
+        padding: 10px 20px;
+        background-color: grey;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .ComprarBoton:hover {
+        background-color: grey;
+      }
+      .ComprarBoton:active {
+        background-color: grey;
+      } /*Termina modificador boton*/
+
+
+
+      /*Modificador imagenes productos*/
+      .product-box:hover{
+        text-decoration: none;
+      }
+
+      .product-box:hover img{
+        transform: scale(1.1);
+      }
+
+      .product-box img{
+        transition: all 0.3s;
+      }
+
+      /*Modificador descuentos productos*/
+      .product-box .offer{
+        color:red;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .product-box .offer .producto1 .hidden{
+        visibility: hidden;
+      }
+
+      .product-box .price{
+        font-size: 18px;
+      }
+
+      .product-box  strong del{
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 5px;
+      }
+
+      .ubicacion{
+        text-align: center;
+        color:grey;
+      }
+
+
+
+      /*Footer*/
+      footer {
+        background-color: grey;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+      }
+    
+    .icon-footer{
+        text-align: center;
+        font-size: 14px;
+    }
+        
+    
+
+
+
